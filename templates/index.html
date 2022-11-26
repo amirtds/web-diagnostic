@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Diagnostic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+    <div class="isolate bg-white">
+        <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+            <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
+                viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fill-opacity=".3"
+                    d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+                <defs>
+                    <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177"
+                        y2="474.645" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#9089FC"></stop>
+                        <stop offset="1" stop-color="#FF80B5"></stop>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <div class="px-6 pt-6 lg:px-8">
+            <div>
+                <nav class="flex h-9 items-center justify-between" aria-label="Global">
+                    <div class="lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
+                        <button button onclick="openSlideOver()"
+                            class="inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20">Diagnostic</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <main>
+            <div class="relative px-6 lg:px-8">
+                <div class="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
+                    <div>
+                        <div>
+                            <h1 class="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">Data to enrich your
+                                online business</h1>
+                            <p class="mt-6 text-lg leading-8 text-gray-600 sm:text-center">Anim aute id magna aliqua ad
+                                ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat
+                                veniam occaecat fugiat aliqua.</p>
+                            <div class="mt-8 flex gap-x-4 sm:justify-center">
+                                <a href="#"
+                                    class="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700">
+                                    Get started
+                                    <span class="text-indigo-200" aria-hidden="true">&rarr;</span>
+                                </a>
+                                <a href="#"
+                                    class="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                                    Live demo
+                                    <span class="text-gray-400" aria-hidden="true">&rarr;</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+                            <svg class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]"
+                                viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="url(#ecb5b0c9-546c-4772-8c71-4d3f06d544bc)" fill-opacity=".3"
+                                    d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+                                <defs>
+                                    <linearGradient id="ecb5b0c9-546c-4772-8c71-4d3f06d544bc" x1="1155.49" x2="-78.208"
+                                        y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#9089FC"></stop>
+                                        <stop offset="1" stop-color="#FF80B5"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+    <div class="hidden relative z-10" aria-labelledby="slide-over-title" role="dialog" aria-modal="true" id="slide-over">
+        <div class="fixed inset-0"></div>
+        <div class="fixed inset-0 overflow-hidden">
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+                    <div class="pointer-events-auto w-screen max-w-md">
+                        <div class="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+                            <div class="px-4 sm:px-6">
+                                <div class="flex items-start justify-between">
+                                    <h2 class="text-lg font-medium text-gray-900" id="slide-over-title">Diagnostic Tools
+                                    </h2>
+                                    <div class="ml-3 flex h-7 items-center">
+                                        <button type="button"
+                                            class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                            onclick="closeSlideOver()">
+                                            <span class="sr-only">Close panel</span>
+                                            <!-- Heroicon name: outline/x-mark -->
+                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M6 18L18 6M6 6l12 12" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative mt-6 flex-1 px-4 sm:px-6">
+                                <div class="h-full border-2 border-dashed border-gray-200 p-4">
+                                    <p class="text-lg font-bold mb-4">Server Response Time</p>
+                                    <p class="mb-4">Click on the Ping button to see the total response time of the
+                                        server.</p>
+                                    <button
+                                        class="ml-2 inline-flex items-center rounded-md border border-transparent bg-green-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                                        type="button" id="btn-ping" onclick="ping()">Ping</button>
+                                    <button
+                                        class="ml-2 inline-flex items-center rounded-md border border-transparent bg-red-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                                        type="button" id="btn-stop">Stop</button>
+                                    <button
+                                        class="ml-2 inline-flex items-center rounded-md border border-transparent bg-gray-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
+                                        type="button" id="btn-clear" onclick="clearPing()">Clear</button>
+                                    <div class="mt-4" id="ping-result"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function ping() {
+            // calculate the amount of time it takes when user click on the button and get the response, display the response time in the ping-result div
+            // Keep running the ping once a second and append the result to the ping-result div
+            var interval = setInterval(function () {
+                    var result = document.getElementById("ping-result");
+                    result.innerHTML += "Ping Time <br>";
+                    
+                }, 1000);
+            // stop the ping when user clicks on the stop button
+            document.getElementById("btn-stop").onclick = function () {
+                clearInterval(interval);
+            }
+        }
+        // clear the ping-result div when user clicks on the clear button
+        function clearPing() {
+            document.getElementById('ping-result').innerHTML = '';
+        }
+    </script>
+    <script>
+        function openSlideOver() {
+            document.getElementById("slide-over").classList.remove("hidden");
+            document.getElementById("slide-over").classList.add("block");
+        }
+        function closeSlideOver() {
+            document.getElementById("slide-over").classList.remove("block");
+            document.getElementById("slide-over").classList.add("hidden");
+        }
+    </script>
+</body>
+
+</html>
