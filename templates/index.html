@@ -135,10 +135,19 @@
             // calculate the amount of time it takes when user click on the button and get the response, display the response time in the ping-result div
             // Keep running the ping once a second and append the result to the ping-result div
             var interval = setInterval(function () {
-                    var result = document.getElementById("ping-result");
-                    result.innerHTML += "Ping Time <br>";
-                    
-                }, 1000);
+                var start = new Date().getTime(); // start the timer
+                var xhr = new XMLHttpRequest(); // create a new request
+                xhr.open("GET", "/ping", true); // call the ping endpoint
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4) {
+                        var end = new Date().getTime(); // stop the timer
+                        var time = end - start; // calculate the time it took to get the response
+                        var result = document.getElementById("ping-result");
+                        result.innerHTML += "Time: " + time + "ms" + "<br>"; // append the result to the div
+                    }
+                }
+                xhr.send();
+            }, 1000);
             // stop the ping when user clicks on the stop button
             document.getElementById("btn-stop").onclick = function () {
                 clearInterval(interval);
