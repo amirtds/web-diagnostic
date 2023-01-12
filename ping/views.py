@@ -1,4 +1,7 @@
-from django.http import HttpResponse
+from django.http import JsonResponse
 
 def ping(request):
-    return HttpResponse(request.GET.get('ECHOMSG', ''))
+    data = {
+        'message': request.GET.get('ECHOMSG', '')
+    }
+    return JsonResponse(data)
